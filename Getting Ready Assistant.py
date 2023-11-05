@@ -83,7 +83,7 @@ if distro == "debian":
     what_it_is("Deleting Superfluous Packages")
     execute_as_root(
         root_password,
-        "sudo apt purge gnome-2048 gnome-chess gnome-klotski gnome-sudoku gnome-mahjongg gnome-robots gnome-mines gnome-nibbles gnome-taquin gnome-tetravex five-or-more four-in-a-row lightsoff quadrapassel swell-foop tali aisleriot hitori iagno -y;sudo apt purge yelp transmission-gtk totem evolution gnome-weather gnome-sound-recorder gnome-music gnome-contacts seahorse rhythmbox xterm mlterm-common kasumi mlterm-common -y;sudo apt-get purge xiterm+thai mozc-utils-gui -y;sudo apt autoremove -y;sudo apt autoclean -y;sudo apt clean -y;",
+        "sudo apt purge gnome-2048 gnome-chess gnome-klotski gnome-sudoku gnome-mahjongg gnome-robots gnome-mines gnome-nibbles gnome-taquin gnome-tetravex five-or-more four-in-a-row lightsoff quadrapassel swell-foop tali aisleriot hitori iagno -y;sudo apt purge yelp transmission-gtk totem evolution gnome-weather gnome-sound-recorder gnome-music gnome-contacts seahorse rhythmbox xterm mlterm-common kasumi mlterm-common -y;sudo apt-get purge xiterm+thai ibus uim mozc-utils-gui -y;sudo apt autoremove -y;sudo apt autoclean -y;sudo apt clean -y;",
     )
 
     what_it_is("Patch Connection Android-Devices...")
